@@ -14,6 +14,10 @@ BLUE = (0, 0, 255)
 RED = (255, 0, 0)
 YELLOW = (255, 255, 0)
 SPEED = 6
+
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+screen.fill(BLACK)
+
 score = 0
 
 bg = pygame.transform.scale(pygame.image.load('birdupbg.png'), (WIDTH, HEIGHT))
@@ -29,8 +33,7 @@ birdY = int(HEIGHT/2 - birdHeight/2)
 targetBirdY = birdY
 bird = pygame.transform.scale(pygame.image.load('birdup.png'), (birdWidth, birdHeight))
 
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-screen.fill(BLACK)
+
 
 pygame.display.update()
 
