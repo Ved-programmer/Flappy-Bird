@@ -33,8 +33,6 @@ birdY = int(HEIGHT/2 - birdHeight/2)
 targetBirdY = birdY
 bird = pygame.transform.scale(pygame.image.load('birdup.png'), (birdWidth, birdHeight))
 
-
-
 pygame.display.update()
 
 clock = pygame.time.Clock()
@@ -81,8 +79,8 @@ def collidedWithBird(pipeObstacle):
 def updateBirdY():
     global birdY, targetBirdY
     if targetBirdY - HEIGHT/100 < birdY < targetBirdY + HEIGHT/100:
-        birdY += HEIGHT//150
-        targetBirdY += HEIGHT//150
+        birdY += HEIGHT//120
+        targetBirdY += HEIGHT//120
     else:
         birdY -= HEIGHT/50
 
